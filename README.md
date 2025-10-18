@@ -2,17 +2,34 @@
 
 ## 🎗️ Intelligent Diagnostic System for Breast Cancer Classification
 
-<!-- CAROUSEL D'IMAGES -->
+<!-- GALERIE D'IMAGES SANS TITRES -->
 <div align="center">
 
-| | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-| ![Dashboard](https://via.placeholder.com/300x200/1a73e8/ffffff?text=Medical+Dashboard) | ![Diagnostic](https://via.placeholder.com/300x200/34a853/ffffff?text=AI+Diagnostic) | ![Analytics](https://via.placeholder.com/300x200/ea4335/ffffff?text=Analytics) |
-| **Medical Dashboard** | **AI Diagnostic Tool** | **Advanced Analytics** |
-| ![Models](https://via.placeholder.com/300x200/8e44ad/ffffff?text=Model+Comparison) | ![Results](https://via.placeholder.com/300x200/f39c12/ffffff?text=Results) | ![ROC](https://via.placeholder.com/300x200/2c3e50/ffffff?text=ROC+Curves) |
-| **Model Comparison** | **Prediction Results** | **ROC Analysis** |
+### 📸 Application Gallery
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 20px 0;">
+
+<img src="images/Capture d'écran 2025-10-17 214029.png" width="280" height="180" alt="Dashboard Overview">
+<img src="images/Capture d'écran 2025-10-17 213519.png" width="280" height="180" alt="AI Diagnostic">
+<img src="images/Capture d'écran 2025-10-17 213536.png" width="280" height="180" alt="Analytics">
+<img src="images/Capture d'écran 2025-10-17 213556.png" width="280" height="180" alt="Model Comparison">
+<img src="images/Capture d'écran 2025-10-17 213627.png" width="280" height="180" alt="Prediction Results">
+<img src="images/Capture d'écran 2025-10-17 213651.png" width="280" height="180" alt="ROC Analysis">
+<img src="images/Capture d'écran 2025-10-17 213711.png" width="280" height="180" alt="Confusion Matrix">
+<img src="images/Capture d'écran 2025-10-17 213730.png" width="280" height="180" alt="Feature Importance">
+<img src="images/Capture d'écran 2025-10-17 213753.png" width="280" height="180" alt="Distribution Analysis">
+<img src="images/Capture d'écran 2025-10-17 213816.png" width="280" height="180" alt="Correlation Matrix">
+<img src="images/Capture d'écran 2025-10-17 213834.png" width="280" height="180" alt="Statistical Analysis">
+<img src="images/Capture d'écran 2025-10-17 213856.png" width="280" height="180" alt="Performance Metrics">
+<img src="images/Capture d'écran 2025-10-17 213912.png" width="280" height="180" alt="Training Time">
+<img src="images/Capture d'écran 2025-10-17 213934.png" width="280" height="180" alt="Algorithm Performance">
+<img src="images/Capture d'écran 2025-10-17 213951.png" width="280" height="180" alt="Model Details">
+<img src="images/Capture d'écran 2025-10-17 214010.png" width="280" height="180" alt="Final Results">
 
 </div>
+
+</div>
+
 
 > **Medical-grade web application for breast tumor classification using advanced machine learning algorithms**
 
@@ -108,16 +125,41 @@ breast-cancer-prediction/
 
 ## 📈 Dataset Information
 
-### 📊 Wisconsin Breast Cancer Dataset
+### 📊 Breast Cancer Dataset (Kaggle)
+- **Source**: [Kaggle - Breast Cancer Dataset](https://www.kaggle.com/datasets/uciml/breast-cancer-wisconsin-data)
 - **Samples**: 569 patient records
-- **Features**: 30 cellular characteristics
-- **Classes**: Benign (357) vs Malignant (212)
+- **Features**: 32 variables (including ID and diagnosis)
+- **Classes**: 
+  - **Benign (B)**: 357 cases
+  - **Malignant (M)**: 212 cases
 - **Data Split**: 80% training, 20% testing
+- **Missing Values**: None
 
-### 🔍 Key Features Analyzed
-- **Morphological Features**: Radius, Texture, Perimeter, Area
-- **Structural Features**: Smoothness, Compactness, Concavity
-- **Advanced Metrics**: Symmetry, Fractal Dimension
+### 🔍 Features Description
+The dataset contains the following computed features for each cell nucleus:
+
+**Mean Values:**
+- `radius_mean` - Mean of distances from center to points on the perimeter
+- `texture_mean` - Standard deviation of gray-scale values
+- `perimeter_mean` - Perimeter length
+- `area_mean` - Area of the nucleus
+- `smoothness_mean` - Local variation in radius lengths
+- `compactness_mean` - Perimeter² / area - 1.0
+- `concavity_mean` - Severity of concave portions of the contour
+- `concave points_mean` - Number of concave portions of the contour
+- `symmetry_mean` - Symmetry of the nucleus
+- `fractal_dimension_mean` - "Coastline approximation" - 1
+
+**Standard Error:**
+- `radius_se`, `texture_se`, `perimeter_se`, `area_se`, etc.
+
+**Worst Values (Largest):**
+- `radius_worst`, `texture_worst`, `perimeter_worst`, `area_worst`, etc.
+
+### 🎯 Target Variable
+- `diagnosis`: 
+  - **M** = Malignant (Cancerous)
+  - **B** = Benign (Non-cancerous)
 
 ---
 
